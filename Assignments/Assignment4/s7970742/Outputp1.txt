@@ -1,0 +1,23 @@
+outputP1
+
+** MyGraphTest1: testing class MyGraph only.
+** VertexNames={zero,one,two,three} for Vertices {0,1,2,3}
+** EdgeSet={ {0,1},{0,2}, {0,3}, {2,3}, {1,3} } with weights 1,2,3,4,5
+
+Now testing each method:
+
+Testing Constructor...
+Completed Constructor.
+
+numVertices()=4
+numEdges()=5
+vertices() and show indices:
+edges() and show weights:
+
+
+Testing getEdge(v,w) for each pair of vertices (v,w) and showing distances:
+
+Testing: endVertices, opposite
+
+**End Test !!! 
+

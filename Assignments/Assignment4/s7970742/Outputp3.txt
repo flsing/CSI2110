@@ -1,0 +1,31 @@
+outputp3
+
+** MyGraphTest1: testing class MyGraph only.
+** VertexNames={zero,one,two,three} for Vertices {0,1,2,3}
+** EdgeSet={ {0,1},{0,2}, {0,3}, {2,3}, {1,3} } with weights 1,2,3,4,5
+
+Now testing each method:
+
+Testing Constructor...
+Completed Constructor.
+
+numVertices()=4
+numEdges()=5
+vertices() and show indices:
+edges() and show weights:
+
+
+Testing getEdge(v,w) for each pair of vertices (v,w) and showing distances:
+
+Testing: endVertices, opposite
+
+** Starting testing KruskalAlgorithms
+
+Testing constructor KruskalAlgorithms()
+Testing minimumSpanningTree(g)
+Exception in thread "main" java.util.NoSuchElementException
+	at java.util.AbstractQueue.remove(AbstractQueue.java:117)
+	at KruskalAlgorithms.kruskalClusters(KruskalAlgorithms.java:67)
+	at KruskalAlgorithms.minimumSpanningTree(KruskalAlgorithms.java:24)
+	at MyGraphTest123.testGraph(MyGraphTest123.java:75)
+	at MyGraphTest123.main(MyGraphTest123.java:88)
