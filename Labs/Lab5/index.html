@@ -1,0 +1,68 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+    <body>
+        
+        <h2>Lab 5: Binary Tree Traversals and Iterators</h2>
+        <ul>
+            <li>
+Download the following file
+                <ul>
+                    <li><a href="Lab5.zip">Lab5.zip</a></li>
+                </ul>
+            </li>
+        </ul>
+
+<h3>Binary tree traversals</h3>
+During lectures, we have discussed binary tree traversals.
+Your first task is to implement recursive methods to do preorder, inorder
+and postorder traversals. This should be a simple task, based on pseudocodes
+seen in lecture, and take only a few minutes to code and test.
+More specifically complete the following methods
+inside LikedBinarySearchTree class:
+<ul>
+<li>void preorderRecursive(Node<E>)
+<li>void inorderRecursive(Node<E>)
+<li>void postorderRecursive(Node<E>)
+</ul>
+
+<h3>Binary tree iterators</h2>
+
+In a previous course, you probably have studied the concept of an iterator
+for a class; you might have studied in more detail list iterators.<br>
+In this lab you will apply the concept of an iterator for a binary tree.
+While a list iterator is a way to move through elements of a list from
+beginning to end, for a tree there are many ways to move from node to node.<br>
+For this part you will implement two types of iterators: a preorder and an order iterator.
+<p>
+You may need to review <a href="https://docs.oracle.com/javase/7/docs/api/java/util/Iterator.html">information about the Interface Iterator&ltE&gt</a>
+provided in package java.util.
+Your TA will briefly review iterators during the lab.
+Your iterators will implement this interface, so you need to provide the
+the constructor plus methods hasNext() and next() for each iterator implemented.
+
+<p>
+The hardest method to implement for  
+<b>class InorderIterator implements Iterator<E></b> is next() as it entails to figure out from the current
+node of your iterator, who is the next node to be visited in an inorder traversal of the tree.
+The same is true for <b>class PreorderIterator implements Iterator<E></b>.
+
+<p>
+The <a href="DGD5-traversalNext.txt">pseudocode of the algorithms to do these tasks have been discussed in your DGD</a> and
+will also be reviewed by your TA in the lab.
+
+
+
+
+<p>
+
+Task details:
+<ol>
+<li> Review class LinkedBinaryTree and class TestTree.
+<li> Implement the traversal algorithms; test them using TestTree class.
+<li> Implement preorderNext and inorderNext iterators; based on pseudocodes given. These
+are nontrivial algorithms.
+<li> Test them with TestTree class.
+</ol>
+    </body>
+</html>

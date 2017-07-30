@@ -1,0 +1,67 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
+  <title>Lab 10</title>
+</head>
+<p>
+<h1>Lab 10</h1>
+</p>
+
+<h2>Dijkstra's Algorithm </h2>
+<p>
+Download the archive <tt>Lab10.zip</tt> and extract the
+<tt>WeightGraph</tt> application. The application is similar to
+<tt>SimpleGraph</tt> except that it expects to read an edge-list from
+a file where the edges are weighted. The archive contains the
+airports' example from the textbook in the file
+<tt>airports.txt</tt>. The Graph is again stored as
+<tt>AdjacencyListGraph</tt> and the application simple prints all the
+vertices followed by all the edges for verification.
+</p>
+
+<h2>Study the Goodrich et al. Implementation</h2>
+<p>
+Study the <tt>Dijkstra</tt> implementation by Goodrich et al. The
+implementation follows closely our discussion in class. Notice that
+the algorithm assumes that the edges of the graph have been decorated
+with a key <tt>WEIGHT</tt>. Before constructing Dijkstra, you will
+need to make sure that the edges in your graph have been
+decorated. Note that the class <tt>Edge</tt> implements
+<tt>DecorablePosition</tt> which enables you to store a (Key,Value)
+pairs with an edge. You will need to add a line of code to <tt>void
+WeightGraph.read()</tt> to appropriately decorate the edge.
+</p>
+
+
+<h2>Find the Shortest Path</h2>
+<p>
+The program <tt>WeightGraph</tt> has a routine <tt> void
+printAllShortestDistances( String vert )</tt> which currently does
+nothing. Please implement this routine by constructing a
+<tt>Dijkstra</tt> object and calling the <tt>execute</tt> method on
+it. After execution, the routine should print the distance between the
+source vertex and all other vertices with a name longer than 2
+letters. In this way, you may define intermediate vertices for the
+graph but they will not be printed.
+</p>
+
+
+<h2>Road Map Graph</h2>
+<p>
+The image belows shows a simplified road map of eastern
+Ontario. Define a suitable graph for the roadmap (or part of it) which
+will allow you to find the shortest from all the named cities or
+towns. Notice that you need additionally vertices in-between the
+towns. If you use names with no more than two letters, they will not
+interfere with printing. Create a new textfile and find all shortest
+path from Ottawa with the application.
+</p>
+
+
+<img src="eastOntario.png" >
+&copy; <small>Queen's Printer for Ontario</small>
+ 
+</body>
+
+</html>

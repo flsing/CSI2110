@@ -1,0 +1,45 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+    <body>
+        <p><strong><span style="font-size:18pt; ">Lab 4:</span></strong></p>
+        <p><strong><span style="">Implementing Priority Queue Using Heap</span></strong></p>
+        <ul>
+            <li>
+Download the following file
+                <ul>
+                    <li><a href="Lab4.zip">Lab4.zip</a></li>
+                </ul>
+            </li>
+        </ul>
+
+
+In lecture you have studied priority queues implementations using sorted and 
+unsorted sequences. We analyzed that both implementations take O(n) for one
+of the two main operations of the priority queue (insert and removeMin).<br>
+By implementing a priority queue using a heap we can execute insert and removeMin
+in O(log(n)) time reducing time complexity while still storing the
+Priority Queue in the most efficient amount of space. 
+<p>
+The task for this lab involves writing the full implementation of a priority 
+queue using an array implementation for a heap
+as the data structure.
+
+Your TA should review how to implement a <a href="arrayHeap.pdf">heap using an array</a>.<br>
+Your TA should also review the upHeap and downHeap operations needed to do
+insert and removeMin operations, respectively; the main reference for this
+are the slides on heap priority queues covered in class.
+
+<p>
+
+Task details:
+<ol>
+<li> Review the given PriorityQueue&ltK,V&gt interface and Entry&ltK,V&gt class.
+<li> Complete HeapPriorityQueue&ltK,V&gt class using a heap, stored as an array
+of elements Entry&ltK,V&gt.
+<li> Test HeapPriorityQueue&ltK,V&gt using HeapPriorityQueueTest.
+</li>
+
+
+    </body>
+</html>

@@ -1,0 +1,52 @@
+<!doctype html public "-//w3c//dtd html 4.0 transitional//en">
+<html>
+<head>
+   <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+   <title>Lab 6</title>
+</head>
+<body>
+<p>
+<h1>Lab 6</h1>
+<hr>
+<h2>AVL and BST Height Comparison</h2>
+<p>
+Study the AVL tree implementation of Goodrich et al. The approach
+consists of an AVL tree implementation <tt>AVLTree.java</tt> extending
+the binary search tree implementation <tt>BinarySearchTree.java</tt>
+which is implemented with a linked list
+<tt>LinkedBinaryTree.java</tt>. We have seen the linked binary tree
+implementation before -- see Lab 5. These classes are all
+part of the net.datastructures package which is contained (as far as
+required) in the zip archive for this lab.
+</p>
+
+<p>
+Study the code in the skeleton <tt>Verify.java</tt>. You have to
+implement the two missing methods such that <tt>Verify</tt>
+prints statistics about the heights of regular Binary Search Trees and
+AVL trees. 
+</p>
+
+<p>
+The method <tt>void randomTrees( int _noNodes, int _nTrees )</tt>
+creates <tt>_nTrees</tt> trees with <tt>_noNodes</tt> at random. It
+inserts random integer keys in a BST and AVL tree. The class Verify is
+employed to keep track of the height of each tree and records the
+minimum, maximum and average height for the AVL and BST trees.
+</p>
+ 
+<p>
+The method <tt><T> int height( BinaryTree<T> bTree )</tt> calculates
+the height of any binary tree. 
+</p>
+
+
+<p> 
+The program output should look as follows:
+</p>
+<img src="output.png" >
+<!-- align="middle" height="240" width="180"> -->
+
+
+</body>
+</html>

@@ -1,0 +1,136 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+    <body>
+        <h2>Lab 4: Hashing</h2>
+
+In this lab, you will implement several different collision resolution techniques
+for Hashing.<br>
+You will also use Hashing in an application for word counting on a large
+text.
+
+
+<ul>
+<li> <b>Part 0: Overview of startup code structure:</b> your TA will walk you through this part.
+<ul>
+
+<li>
+Download the following file: <a href="Lab7.zip">Lab7.zip</a>
+            </li>
+<li>Hash functions: <br>
+    <tt>StringHash</tt>: Simple hashing function for strings<br>
+    <tt>ReverseStringHash</tt>: Uses the same function as before, but on the reversed sting
+<li>Hash tables: <br>
+    <tt>ArrayHashTable</tt>: An implementation for a hash table handling overflow by finding another place in
+the table via probing table positions.
+This must be general enough such that any form of probing can be done. So, the constructor
+requires 2 hash functions, in the case of linear and quadratic probing, the second one will be null,
+in the case of double hashing or quadratic double hashing the second hash function will be provided. <br>
+
+    <tt>ChainedHashTable</tt>: An implementation for a hash table handling overflow by using separate chaining (each table position can hold an array list of elements hashing to that position)<br>
+
+<li>
+Stepping Functions: Functions to take the i value of the step and return the actual step value, the second and third require the long value of the second hash to calculate the step:
+    <tt>LinearProbeStep</tt>, 
+    <tt>QuadraticProbeStep</tt>,
+    <tt>DoubleHashStep</tt>,
+    <tt>QuadraticDoubleHashStep</tt>.
+
+<li>
+Testing<br>
+    <tt>ToyTest</tt>: A simple test to check if all values are being added, and overwriting and get work properley, for debugging<br>
+    <tt>HashingTest</tt>: A test to check the statistics of the various methods of collision resolution using book chapters to test with.
+</ul>
+<p> 
+<li>
+<b>Part 1: Implementing Hashing with different collision resolution techniques</b>
+<br>
+Note: Be aware that <tt>remove</tt> and <tt>contains</tt> are implemented in such a way
+that methods <tt>put</tt> and <tt>get</tt> must be aware of special 
+values to indicate
+that a table position has never been occupied (NULL at the table) and that
+the position is AVAILABLE but it has been occupied before (Entry&ltK,V&gt present at the table with key=null).
+<ol>
+
+<li><b>Implementing Linear Hashing</b><br>
+
+
+
+In this part, you will complete the implementation of methods
+<tt>get</tt> and <tt>put</tt> in class ArrayHashTable which implements interface HashTable<K,V>.
+
+You will implement linear hashing, which attempts to place 
+a key in the following successive positions h(k) mod N, (h(k)+1) mod N, (h(k)+2) mod N, etc.
+We can simply say the i-th attempt uses the function (h(k)+i) mod N.
+<br>
+The hash function h1 has been initialized in the constructor and the stepping function as well.
+In addition LinearProbeStep method has been passed with the correct value for the step 
+(check its method step).
+<br>
+Use class ToyTest to test your implementation (you can comment out the tests for the 
+classes you have not implemented yet).
+
+<li> <b> Implementing quadratic hashing, (linear) double hashing, and quadratic double hashing.</b><br>
+Modify your implementation to allow for different in-table collision
+resolution techniques: linear hashing, quadratic hashing, linear double hashing, 
+quadratic double hashing.
+
+This can be done by simply changing the "step" that you move away
+from the home address h(k). In linear hashing this step is step(i)=i,
+while for quadratic hashing step(i)=i*i.
+Linear double hashing and quadratic double hashing uses another hash function h2(k)
+to calculate the step: step(i,k)=i*h2(k) and step(i,k)=i*i*h2(k), respectively.
+<br>
+
+
+Within ArrayHashTable the constructor requires a SteppingFunction object, this object should be used to calculate 
+the step for each of the 4 cases, the object takes an int for the i value, a long (may or may not be used, depending on double hashing), and a size for taking the modulus (mod).<br>
+The stepping function has been initialized in the constructor, but their methods step must be 
+updated to work correctly as they currently return 1 
+(see classes QuadraticProbeStep, DoubleHashStep, QuadraticDoubleHashStep).
+
+Test your code with ToyTest.
+
+<li> <b>Implementing Hashing with separate Chaining</b><br>
+
+Here the elements of the hash table are Linked Lists of entries (K,V) where K is a 
+key and V is its associated value.
+Implement methods <tt>get</tt> and <tt>put</tt> for class ChainedHash.
+<br>
+If you run out of time during the lab, feel free to skip this part and use
+this solution (<a href="ChainedHashTable.java">ChainedHashTable.java</a>) so that you can move on to Part 2 and perform the tests there.
+</ol>
+
+<li>
+<p>
+<b>Part 2: Word count problem.</b><br>
+
+You are given two large texts TheAeneidBook1.txt and TheOdysseyBook1.txt.
+<br>
+Your task is to compute the list of different words in the text
+and the number of times each word occurs.<br>
+The class <tt>HashingTest</tt> already implements for you the word parsing from these
+files, so that you can concentrate on word count.
+<br>
+We propose an efficient way of doing this using a Hash Table.
+Store in the hash table each word found (key K) and its frequency (value V).
+Given a list of words (with repetitions), go through this list one by one.
+A new word is added to the hash table with frequency one, while a word
+already present in the hash table should get its frequency incremented.
+<br>
+This should be done by simply using one of the Hashing classes that implement
+interface HashTable<String,Integer> and only calling methods provided by this
+interface. This code is going to be a loop with a small body to be added 
+inside method <tt>HashingTest.HashAndStats(ArrayList<String> words, HashTable<String,Integer> table)</tt>.
+<br>
+The main program of class <tt>HashingTest</tt> takes care of testing it using different
+collision resolution techniques so that we can compare stats.
+<br>
+Run this program and analyze its output. <br>
+Feel free to play with different table sizes later and compare stats.
+</ul>
+
+
+Created by Lucia Moura and Lachlan Plant.
+    </body>
+</html>

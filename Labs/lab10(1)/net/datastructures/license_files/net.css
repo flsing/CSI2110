@@ -1,0 +1,51 @@
+A:link { text-decoration: color: #804060; }
+A:active { text-decoration: color: red; }
+A:visited { text-decoration: color: #804060; }
+A:hover { text-decoration: underline; color: #CC0000; }
+
+BODY {
+  background-color: #ffffff;
+  margin: 10;
+  margin-left: 5%;
+  margin-right: 5%;
+  margin-top: 1px;
+  margin-bottom: 1px;
+
+}
+
+H1 {
+   font-family: Tahoma, sans-serif;
+   font-weight: bold;
+   font-size: 200%;
+   font-variant: normal;
+   font-style: normal;
+   color: darkred;
+   text-align: center;
+}
+
+H2 {
+   font-family: Tahoma, sans-serif;
+   font-weight: bold;
+   font-size: 175%;
+   font-variant: normal;
+   font-style: normal;
+}
+
+H3 {
+  font-family: Tahoma, sans-serif;
+  font-weight: bold;
+  font-size: 150%;
+  font-variant: normal;
+  font-style: normal;
+}
+
+H4 {
+   font-family: Tahoma, sans-serif;
+   font-weight: bold;
+   font-size: 115%;
+   font-variant: normal;
+   font-style: normal;
+}
+
+h1, h2, h3, h4 {margin-bottom: 2px; }
+p, ul, li {margin-bottom: 1px; margin-top: 3px }

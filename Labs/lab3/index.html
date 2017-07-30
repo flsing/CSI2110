@@ -1,0 +1,57 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html xmlns="http://www.w3.org/1999/xhtml">
+    <head>
+        <meta name="generator" content="HTML Tidy, see www.w3.org" />
+        <meta http-equiv="Content-Type" content="text/html; charset=windows-1252" />
+        <title>Lab 3</title>
+    </head>
+    <body>
+        <h1>Lab 3</h1>
+<br /><br />
+        <hr />
+        <h2>Adapter Pattern and Node List ADT</h2>
+        <p>As discussed in class a doubly-linked list provides a natural implementation of the Node List ADT.</p>
+        <p>The Java Collections Framework does not provide a NodeList interface. In this lab you will need to adapt the LinkedList implementation of the Java Collections Framework to a NodeList and analyze this approach.</p>
+        <p>The Java Collections Framework is well documented in the this <a href="http://java.sun.com/docs/books/tutorial/collections/index.html">tutorial</a> by Sun. The Collections Framework provides two list implementations: <em>java.util.ArrayList</em> and <em>java.util.LinkedList</em> . You should run the simple example program <tt>TestListImplementation.java</tt> which compares the two list implementations. The test program is contained in the archive <a href="lab3.zip">lab3.zip</a>.</p>
+        <p>Your NodeList should hold a sentence consisting of strings which your main program should print in order. See the main program in <tt>Sentence.java</tt> for clarification.</p>
+        <p>Your NodeList adapter class needs to implement the methods specified in this <tt>NodeList.java</tt> skeleton class. You may assume that each node in your NodeList has a unique reference but may contain several objects where a call to &quot;equals()&quot; will return true.</p>
+        <p>Consider the performance of your adaptor class. Which methods have not the expected performance of a NodeList implementation and why?</p>
+        <hr />
+        <h2>Summary</h2>
+        <ul>
+            <li>
+Look at the Java Collections Framework
+                <ul>
+                    <li><a href="http://java.sun.com/docs/books/tutorial/collections/index.html">tutorial</a></li>
+                </ul>
+            </li>
+            <li>
+Download the archive
+                <ul>
+                    <li><a href="lab3.zip">lab3.zip</a></li>
+                </ul>
+            </li>
+            <li>
+Study and run
+                <ul>
+                    <li><tt>TestListImplementation.java</tt></li>
+                </ul>
+            </li>
+            <li>Look at</li>
+            <li style="list-style: none">
+                <ul>
+                    <li><tt>NodeList.java</tt></li>
+                </ul>
+            </li>
+            <li>Implement indicated methods and test your code with</li>
+            <li style="list-style: none">
+                <ul>
+                    <li><tt>Sentence.java</tt></li>
+                </ul>
+            </li>
+            <li>Analyze the behaviour of your adapter class</li>
+        </ul>
+        <hr width="100%" />
+© Jochen Lang
+    </body>
+</html>

@@ -1,0 +1,65 @@
+PSEUDOCODES for preorderNext, inorderNext and postorderNext
+
+preorderNext(v) {
+
+if(v.left!=null)
+   return v.left;
+else 
+if(v.right!=null)
+   return v.right;
+else 
+   parent=v.parent;
+   child =v;
+   while(parent != null && (parent.right == child || parent.right == null)){
+       child = parent;
+       parent = parent.parent;
+   }
+   if(parent == null)
+       return null;
+   else
+       return parent.right;
+}
+                
+
+inorderNext(v) {
+
+//First try to go right 1 than left all the way
+if(v.right != null){
+  next = v.right;
+  while (next.left != null)
+      next = next.left;
+  return next;
+}
+else {
+  next = v;
+  while(true){ //If you can, go up till you came from the left
+     if(next.parent == null) return null;
+     if(next.parent.left == next)  return next.parent;
+     next = next.parent;
+  }  
+} 
+
+
+postorderNext(v) {
+
+//root case 
+if v.parent == null return null
+
+// right child case 
+if v.parent.right=v return v.parent
+
+// left child case
+
+if v.parent.right = null
+   return v.parent
+
+next = v.parent.right;
+
+while (next.isinternal()) {
+     if nex.left!=null next = next.left
+     else next = next.right
+}
+
+return next
+
+}

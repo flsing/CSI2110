@@ -1,0 +1,70 @@
+Part 1:
+
+Count: 5, MaxSize: 10
+N: 2, T(n): 156000 nanosecs, T(n)/(n*n): 39000.0, T(n)/(nlogn): 78000.0
+N: 4, T(n): 2000 nanosecs, T(n)/(n*n): 125.0, T(n)/(nlogn): 250.0
+N: 6, T(n): 2000 nanosecs, T(n)/(n*n): 55.55555555555556, T(n)/(nlogn): 128.95093574484721
+N: 8, T(n): 15000 nanosecs, T(n)/(n*n): 234.375, T(n)/(nlogn): 625.0
+N: 10, T(n): 6000 nanosecs, T(n)/(n*n): 60.0, T(n)/(nlogn): 180.61799739838872
+
+Count: 10, MaxSize: 15
+N: 1, T(n): 1000 nanosecs, T(n)/(n*n): 1000.0, T(n)/(nlogn): Infinity
+N: 2, T(n): 2000 nanosecs, T(n)/(n*n): 500.0, T(n)/(nlogn): 1000.0
+N: 3, T(n): 2000 nanosecs, T(n)/(n*n): 222.22222222222223, T(n)/(nlogn): 420.6198357143049
+N: 4, T(n): 2000 nanosecs, T(n)/(n*n): 125.0, T(n)/(nlogn): 250.0
+N: 5, T(n): 2000 nanosecs, T(n)/(n*n): 80.0, T(n)/(nlogn): 172.27062322935723
+
+Count: 8, MaxSize: 400
+N: 50, T(n): 6000 nanosecs, T(n)/(n*n): 2.4, T(n)/(nlogn): 21.262058416266953
+N: 100, T(n): 11000 nanosecs, T(n)/(n*n): 1.1, T(n)/(nlogn): 16.556649761518965
+N: 150, T(n): 13000 nanosecs, T(n)/(n*n): 0.5777777777777777, T(n)/(nlogn): 11.989049715773342
+N: 200, T(n): 13000 nanosecs, T(n)/(n*n): 0.325, T(n)/(nlogn): 8.503561342107831
+N: 250, T(n): 18000 nanosecs, T(n)/(n*n): 0.288, T(n)/(nlogn): 9.038658018725682
+N: 300, T(n): 31000 nanosecs, T(n)/(n*n): 0.34444444444444444, T(n)/(nlogn): 12.557493027848727
+N: 350, T(n): 24000 nanosecs, T(n)/(n*n): 0.19591836734693877, T(n)/(nlogn): 8.113799035906633
+N: 400, T(n): 26000 nanosecs, T(n)/(n*n): 0.1625, T(n)/(nlogn): 7.5197919276921725
+
+
+Count: 400, MaxSize: 8
+N: 1, T(n): 1000 nanosecs, T(n)/(n*n): 1000.0, T(n)/(nlogn): Infinity
+N: 2, T(n): 1000 nanosecs, T(n)/(n*n): 250.0, T(n)/(nlogn): 500.0
+N: 3, T(n): 2000 nanosecs, T(n)/(n*n): 222.22222222222223, T(n)/(nlogn): 420.6198357143049
+N: 4, T(n): 2000 nanosecs, T(n)/(n*n): 125.0, T(n)/(nlogn): 250.0
+N: 5, T(n): 3000 nanosecs, T(n)/(n*n): 120.0, T(n)/(nlogn): 258.40593484403587
+N: 6, T(n): 2000 nanosecs, T(n)/(n*n): 55.55555555555556, T(n)/(nlogn): 128.95093574484721
+N: 7, T(n): 3000 nanosecs, T(n)/(n*n): 61.224489795918366, T(n)/(nlogn): 152.66022304629521
+N: 8, T(n): 2000 nanosecs, T(n)/(n*n): 31.25, T(n)/(nlogn): 83.33333333333333
+
+
+Count: 20, MaxSize: 20
+N: 1, T(n): 1000 nanosecs, T(n)/(n*n): 1000.0, T(n)/(nlogn): Infinity
+N: 2, T(n): 2000 nanosecs, T(n)/(n*n): 500.0, T(n)/(nlogn): 1000.0
+N: 3, T(n): 1000 nanosecs, T(n)/(n*n): 111.11111111111111, T(n)/(nlogn): 210.30991785715244
+N: 4, T(n): 1000 nanosecs, T(n)/(n*n): 62.5, T(n)/(nlogn): 125.0
+N: 5, T(n): 2000 nanosecs, T(n)/(n*n): 80.0, T(n)/(nlogn): 172.27062322935723
+N: 6, T(n): 1000 nanosecs, T(n)/(n*n): 27.77777777777778, T(n)/(nlogn): 64.47546787242361
+N: 7, T(n): 3000 nanosecs, T(n)/(n*n): 61.224489795918366, T(n)/(nlogn): 152.66022304629521
+N: 8, T(n): 2000 nanosecs, T(n)/(n*n): 31.25, T(n)/(nlogn): 83.33333333333333
+N: 9, T(n): 2000 nanosecs, T(n)/(n*n): 24.691358024691358, T(n)/(nlogn): 70.10330595238416
+N: 10, T(n): 2000 nanosecs, T(n)/(n*n): 20.0, T(n)/(nlogn): 60.20599913279624
+N: 11, T(n): 2000 nanosecs, T(n)/(n*n): 16.52892561983471, T(n)/(nlogn): 52.55724114870688
+N: 12, T(n): 2000 nanosecs, T(n)/(n*n): 13.88888888888889, T(n)/(nlogn): 46.490490941854965
+N: 13, T(n): 3000 nanosecs, T(n)/(n*n): 17.75147928994083, T(n)/(nlogn): 62.362651021689175
+N: 14, T(n): 1000 nanosecs, T(n)/(n*n): 5.1020408163265305, T(n)/(nlogn): 18.760681074085255
+N: 15, T(n): 2000 nanosecs, T(n)/(n*n): 8.88888888888889, T(n)/(nlogn): 34.12773664130873
+N: 16, T(n): 3000 nanosecs, T(n)/(n*n): 11.71875, T(n)/(nlogn): 46.875
+N: 17, T(n): 2000 nanosecs, T(n)/(n*n): 6.920415224913495, T(n)/(nlogn): 28.782416719791293
+N: 18, T(n): 1000 nanosecs, T(n)/(n*n): 3.0864197530864197, T(n)/(nlogn): 13.322914809340638
+N: 19, T(n): 3000 nanosecs, T(n)/(n*n): 8.310249307479225, T(n)/(nlogn): 37.169828426311305
+N: 20, T(n): 3000 nanosecs, T(n)/(n*n): 7.5, T(n)/(nlogn): 34.706731973963876
+
+Part 2:
+
+Unique1 50—> Time Elapsed: 0.074815 secs
+Unique1 200—> Time Elapsed: 7.38E-4 secs
+
+Unique2 50—> Time Elapsed: 0.241048 secs
+Unique2 200—> Time Elapsed: 2.8E-5 secs
+
+
+

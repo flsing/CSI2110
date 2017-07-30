@@ -1,0 +1,34 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html xmlns="http://www.w3.org/1999/xhtml">
+    <head>
+        <meta name="generator" content="HTML Tidy, see www.w3.org" />
+        <meta http-equiv="Content-Type" content="text/html; charset=windows-1252" />
+        <title>Lab 9</title>
+    </head>
+    <body>
+        <h1>Lab 9</h1>
+
+        <h2>Adjacency List Implementation of a Graph and DFS</h2>
+        <p>Download the archive <tt>Lab9.zip</tt> and extract the <tt>SimpleGraph</tt> application. The application reads an edge-list from a file and constructs a Graph. The Graph is stored as <tt>AdjacencyMapGraph</tt>. The application simply prints all the vertices followed by all the edges. The archives also contain two graph files which you can use as input for the application:</p>
+        <ul>
+            <li><tt>graph.txt</tt></li>
+            <li><tt>graph2.txt</tt></li>
+        </ul>
+
+
+<h2>Presentation by your TA</h2>
+Your TA will explain the recursive implementation of Depth First Search.<br>
+See Graph Traversals slides (for 2015 slides, this can be found in page 37 and examples from page 38-40). 
+
+<br /><br />
+        <h2>New Graph</h2>
+        <p>Define a new graph in a textfile and print it with the application.</p>
+        <h2>Study the Goodrich et al. Implementation</h2>
+        <p>Study the <tt>AdjacencyMapGraph</tt> implementation of the <tt>Graph</tt> ADT by Goodrich et al. Keep in mind the structure discussed in class. Notice that the adjacency lists are implemented in the inner class <tt>MyVertex</tt> and the references from the edges in the inner class <tt>MyEdge</tt>. The <tt>Graph</tt> ADT does not define any traversal method. You are supposed to implement your own Depth-First Search
+inside the class SimpleGraph, in order to print its vertices in a depth-first search manne (for the next part). These classes are all part of the net.datastructures package which is contained in the zip archive for this lab.</p>
+        <h2>Printing with Depth-First Search<br> (simple Depth First Search, more complex version to be seen in lecture)</h2>
+        <p>The program <tt>SimpleGraph</tt> has a routine <tt>void printDFS( String vert )</tt> that calls <tt>DFS(graph,v)</tt> which currently does nothing. Please
+implement the method <tt>DFS(graph,v)</tt> with a recursive implementation of Depth-first Search (page 37 of lecture notes in graph traversals). The routine should print the vertices as they are visited by the traversal: once when they are first visited and a second time when a vertex is finished. In order to do that, auxiliary methods <tt>startVisit(v)</tt> and <tt>finishVisit(v)</tt>
+are provided.</p>
+    </body>
+</html>
